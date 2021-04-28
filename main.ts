@@ -98,20 +98,20 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (game.score() > 0 && game.score() < 10) {
+    if (game.score() >= 0 && game.score() < 10) {
         Zahl = 2000
-    } else if (game.score() > 10 && game.score() < 20) {
+    } else if (game.score() >= 10 && game.score() < 20) {
         Zahl = 1500
-    } else if (game.score() > 20 && game.score() < 1000000) {
+    } else if (game.score() >= 20 && game.score() < 1000000) {
         Zahl = 1250
     }
 })
 basic.forever(function () {
-    if (game.score() > 0 && game.score() < 10) {
+    if (game.score() >= 0 && game.score() < 10) {
         basic.setLedColor(0x00ff00)
-    } else if (game.score() > 10 && game.score() < 20) {
+    } else if (game.score() >= 10 && game.score() < 20) {
         basic.setLedColor(0xffff00)
-    } else if (game.score() > 30 && game.score() < 1000000) {
+    } else if (game.score() >= 20 && game.score() < 1000000) {
         basic.setLedColor(0xff0000)
     }
 })
