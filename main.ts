@@ -17,6 +17,7 @@ let Zahl = 0
 let Speed_0 = 0
 let sprite: game.LedSprite = null
 sprite = game.createSprite(2, 4)
+game.setLife(3)
 basic.forever(function () {
     basic.pause(randint(500, 3000))
     Speed_0 = randint(500, Zahl)
@@ -26,7 +27,7 @@ basic.forever(function () {
         Auto_0.change(LedSpriteProperty.Y, 1)
     }
     if (sprite.isTouching(Auto_0)) {
-        game.gameOver()
+        game.removeLife(1)
     }
     Auto_0.delete()
     if (game.isRunning()) {
@@ -42,7 +43,7 @@ basic.forever(function () {
         Auto_1.change(LedSpriteProperty.Y, 1)
     }
     if (sprite.isTouching(Auto_1)) {
-        game.gameOver()
+        game.removeLife(1)
     }
     Auto_1.delete()
     if (game.isRunning()) {
@@ -58,7 +59,7 @@ basic.forever(function () {
         Auto_2.change(LedSpriteProperty.Y, 1)
     }
     if (sprite.isTouching(Auto_2)) {
-        game.gameOver()
+        game.removeLife(1)
     }
     Auto_2.delete()
     if (game.isRunning()) {
@@ -74,7 +75,7 @@ basic.forever(function () {
         Auto_3.change(LedSpriteProperty.Y, 1)
     }
     if (sprite.isTouching(Auto_3)) {
-        game.gameOver()
+        game.removeLife(1)
     }
     Auto_3.delete()
     if (game.isRunning()) {
@@ -90,7 +91,7 @@ basic.forever(function () {
         Auto_4.change(LedSpriteProperty.Y, 1)
     }
     if (sprite.isTouching(Auto_4)) {
-        game.gameOver()
+        game.removeLife(1)
     }
     Auto_4.delete()
     if (game.isRunning()) {
